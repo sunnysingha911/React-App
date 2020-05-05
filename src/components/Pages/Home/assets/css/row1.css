@@ -1,0 +1,41 @@
+.row-1{
+    margin: 0.7rem 0;
+    height: auto;
+    padding: 1rem;
+    flex-wrap: wrap;
+    /* background-image: url('./top.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    text-align: center;
+    border-bottom: 1px solid #DADCE0;
+}
+
+.row-1 img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.row-1 h1{
+    padding-top: 1rem;
+    font-size: 4rem;
+}
+
+.row-1 p{
+    padding: 2rem 0;
+    font-size: 1.5rem;
+}
+
+.row-1 button{
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    background-color: #1873E8;
+    padding: 1rem 2rem;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+

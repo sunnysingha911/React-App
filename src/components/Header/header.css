@@ -1,0 +1,79 @@
+.logo a{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.menu-bar{
+    cursor: pointer;
+    display: block;
+    padding: 1.15rem 0;
+}
+
+.nav ul{
+    list-style: none;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.nav .showNav{
+    height: 21.6rem;
+    /* background-color: rgba(0,0,0,0.1); */
+}
+
+.nav li a{
+    display: block;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.5s ease;
+    font-size: large;
+}
+
+.nav li a:hover{
+    background: rgba(0,0,0,0.3);
+    padding-left: 0.5rem;
+}
+
+.nav{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+/* Responsive Mode */
+
+@media screen and (min-width: 768px){
+    .logo{
+        box-shadow: none;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    .menu-bar{
+        display: none;
+    }
+    
+    .close{
+        display: none;
+    }
+
+    .nav ul{
+        display: flex;
+        height: auto;
+    }
+
+    .nav .showNav{
+        height: auto;
+    }
+
+}

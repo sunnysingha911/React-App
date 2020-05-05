@@ -1,0 +1,92 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form h2{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.login-form{
+    margin: 2.5rem 0;
+}
+
+.form{
+    margin: 1rem;
+    padding: 1rem;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.form p{
+    text-align: end;
+    font-size: 14px;
+    color: red;
+    margin-bottom: 1rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.form input{
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    height: 3rem;
+    background-color: rgb(232,240,254);
+    border: 1px solid #DADCE0;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+.form input[type=text]{
+    margin-bottom: 2rem;
+}
+
+.form input:focus{
+    border: 2px solid #1873E8;
+    outline: none;
+}
+
+.form button{
+    padding: 1rem;
+    margin: 0.5rem 1rem;
+    background-color: #1873E8;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 600px){
+    
+    .login-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        height: 500px;
+        background-image: url("../../../Home/assets/images/side.png");
+    }
+    .login-info h1{
+        align-self: flex-start;
+    }
+
+    .login-info p{
+        font-size: 1.3rem;
+        margin: 1rem 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-form{
+        width: 450px;
+        border: 1px solid #DADCE0;
+        border-radius: 0.4rem;
+    }
+}

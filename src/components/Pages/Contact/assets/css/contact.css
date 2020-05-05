@@ -1,0 +1,99 @@
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 2.5rem 0;
+}
+
+.contact-container{
+    align-self: center;
+    width: 100%;
+    border-radius: 0.3rem;
+}
+
+.items input[type=text]{
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    height: 3rem;
+    background-color: rgb(232,240,254);
+    border: 1px solid #DADCE0;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+.items textarea{
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    background-color: rgb(232,240,254);
+    border: 1px solid #DADCE0;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+.items input[type=text],textarea:focus{
+    border: 2px solid #1873E8;
+    outline: none;
+}
+
+.items button{
+    border: none;
+    padding: 0.7rem;
+    background-color: #1873E8;
+    border-radius: 0.2rem;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contact-form{
+    border: 1px solid #DADCE0;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form h1{
+    margin: 0 0 1.5rem;
+}
+
+.container{
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.get-in-touch{
+    border: 1px solid #DADCE0;
+    padding: 1rem;
+}
+
+.get-in-touch h2{
+    margin: 0 0 1.5rem;
+}
+
+.address p{
+    margin: 0.3rem 0.5rem 1.3rem;
+}
+
+.address{
+    margin-left: 0.5rem;
+}
+
+@media screen and (min-width: 800px){
+    .contact{
+        padding: 0 6rem;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #DADCE0;
+        justify-content: center;
+    }
+    .contact-form, .get-in-touch{
+        border: none;
+        width: 100%;
+    }
+}
