@@ -8,7 +8,7 @@ const NewProduct = ({url,key}) =>{
         const apiRoot = "https://api.unsplash.com";
         const accessKey = process.env.REACT_APP_ACCESSKEY;
         Axios.get(`${apiRoot}/photos/random?client_id=${accessKey}&count=7&query=iphone`)
-        .then(res=>{console.log(res.data);setImage([...image,...res.data])})
+        .then(res=>setImage([...image,...res.data]))
     },[])
     return(
         <div className="new-product">
