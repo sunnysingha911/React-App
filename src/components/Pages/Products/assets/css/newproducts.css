@@ -23,6 +23,12 @@
     padding: 0.7rem 0 0;
 }
 
+.all-product-image-bottom p:last-child{
+    font-weight: lighter;
+    display: flex;
+    text-transform: capitalize;
+}
+
 .all-product-image img{
     width: 100%;
     max-width: 400px;
