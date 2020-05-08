@@ -23,7 +23,8 @@ const AllProduct = () =>{
                         <div className="all-product-image-bottom">
                             <p>Rs. {Math.round((Math.random()*100))*1000}/-</p>
                             <p>Views: {val.views}</p>
-                            <p><h4>Description: </h4> &nbsp;{val.alt_description} </p>
+                            <p>Description: </p>
+                            <p>{val.alt_description} </p>
                         </div>
                     </div>    
                 ))}
