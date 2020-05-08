@@ -1,56 +1,75 @@
-.all-product-images{
-    display: grid;
-    grid-template-columns: auto;
-    padding: 1.5rem 0rem;
-    border: 1px solid #DADCE0;
-    border-radius: 0.3rem;
+.new-product{
+    margin-bottom: 3rem;
 }
 
-.all-product-image{
-    border: 1px solid #DADCE0;
+.new-products-slide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-products-slide{
+    width: 90vw;
+}
+
+.new-products-slide ul{
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 0.7rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background:rgba(0,0,0,0.2);
+    border-radius: 2rem;
+}
+
+.new-products-slide li{
     padding: 0.5rem;
-    margin: 0.5rem;
-    border-radius: 0.3rem;
+    margin-bottom: 0.7rem;
 }
 
-.all-product-image-top{
-    margin: 1rem 0;
-    text-transform: capitalize;
+.new-products-container{
+    display: flex;
+    justify-content: center;
 }
 
-.all-product-image-bottom p{
-    font-weight: bold;
-    padding: 0.7rem 0 0;
-}
-
-.all-product-image-bottom p:nth-child(3){
-    padding-bottom: 0;
-}
-.all-product-image-bottom p:last-child{
-    text-transform: capitalize;
-    font-weight: lighter;
-    margin-left: 2px;
-    padding-top: 3px;
-}
-
-.all-product-image img{
-    width: 100%;
-    max-width: 400px;
-    height: 15rem;
+.new-products-slide li img{
+    width: 17rem;
+    height: 12rem;
     object-fit: cover;
 }
 
-
-@media screen and (min-width: 475px){
-    .all-product-images{
-        grid-template-columns: auto auto;
-        padding: 1.5rem 0.5rem;
-    }
+.new-product-card{
+    padding: 1rem;
+    border: 1px solid #DADCE0;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 0.5s ease;
 }
 
-@media screen and (min-width: 1024px){
-    .all-product-images{
-        grid-template-columns: auto auto auto;
-        padding: 1.5rem 0.5rem;
-    }
+.new-product-card:hover{
+    transform: scale(1.03);
+    box-shadow: 5px 5px 5px grey;
+}
+
+.new-product-card-upper,
+.new-product-card-lower{
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 0.3rem 0;
+}
+
+.new-product-card-upper{
+    font-size: large;
+}
+
+@media screen and (min-width: 900px){
+    .new-products-slide{
+        width: 80vw;
+    }   
 }

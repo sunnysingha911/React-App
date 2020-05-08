@@ -5,6 +5,16 @@
     margin: 2.5rem 0;
 }
 
+.contact-form h1{
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.get-in-touch h2{
+    font-weight: normal;
+    font-size: 24px;
+}
+
 .contact-container{
     align-self: center;
     width: 100%;

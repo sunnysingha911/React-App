@@ -6,7 +6,7 @@ import './assets/css/product.css';
 function Product(){
     return(
         <div className="product">
-            {/* <NewProducts /> */}
+            <NewProducts />
             <AllProducts />
         </div>
     )

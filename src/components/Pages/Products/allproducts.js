@@ -1,13 +1,13 @@
 import React,{useState,useEffect} from 'react';
 import Axios from 'axios';
-import './assets/css/newproducts.css';
+import './assets/css/allproducts.css';
 
 const AllProduct = () =>{
     const [image,setImage] = useState([]);
     useEffect(()=>{
         const apiRoot = "https://api.unsplash.com";
         const accessKey = process.env.REACT_APP_ACCESSKEY;
-        Axios.get(`${apiRoot}/photos/random?client_id=${accessKey}&count=12&query=mac`)
+        Axios.get(`${apiRoot}/photos/random?client_id=${accessKey}&count=12&query=computer`)
         .then(res=>{console.log(res.data);setImage([...image,...res.data])})
     },[])
     return(
