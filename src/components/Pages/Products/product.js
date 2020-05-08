@@ -1,10 +1,13 @@
 import React from 'react';
+import NewProducts from './newproducts';
+import AllProducts from './allproducts';
+import './assets/css/product.css';
 
 function Product(){
-    console.log("Hiiiiiiii");
     return(
         <div className="product">
-            Hii Product Here
+            {/* <NewProducts /> */}
+            <AllProducts />
         </div>
     )
 }

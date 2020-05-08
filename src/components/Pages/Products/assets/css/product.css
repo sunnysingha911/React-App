@@ -1,0 +1,9 @@
+.product{
+    margin: 2rem 0rem;
+}
+
+@media screen and (min-width: 900px){
+    .product{
+        margin: 2rem 6rem;
+    }
+}

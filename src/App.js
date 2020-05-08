@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
 body{
   background-color: ${getBackground};
   color: ${getForeground};
+  transition: 0.5s ease;
 }
 a{
   color: ${getForeground};
